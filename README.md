@@ -8,9 +8,9 @@
 ## To Reproduce:
 
 - Run `docker-compose up -d`
-- Run `node index.js`
+- Run `node no-manual-connect.js` with Prisma version 2.10.0-dev.30 [which is a Prisma version that doesn't connect automatically]
 
-Expected output:
+Output:
 
 ```
 1st connect
@@ -18,10 +18,12 @@ Expected output:
 2nd connect
 2nd sleep 20 query sent async
 1st query returned
-2nd query returned
+2nd query errored
 ```
 
-Actual output:
+- Run `node no-manual-connect.js` with Prisma version 2.10.0-dev.31 [which is a Prisma version that connects automatically]
+
+Output:
 
 ```
 1st connect
@@ -32,4 +34,4 @@ Actual output:
 2nd query returned
 ```
 
-- Run `node pg.js` => It yields the expected output mentioned above
+The outputs are different
