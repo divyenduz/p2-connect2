@@ -1,0 +1,12 @@
+{
+  "name": "p2-und-err",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/cli": "2.10.0-dev.61"
+  },
+  "dependencies": {
+    "@prisma/client": "2.10.0-dev.61"
+  }
+}

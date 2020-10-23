@@ -1,0 +1,14 @@
+datasource db {
+    provider = "postgresql"
+    url      = "postgresql://root:prisma@localhost:6433/basic-blog?schema=public&pgbouncer=true"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model User {
+    email String @default("")
+    id    String @id
+    name  String @default("")
+}
