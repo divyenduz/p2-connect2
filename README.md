@@ -31,3 +31,5 @@ Actual output:
 2nd sleep 20 query sent async
 2nd query returned
 ```
+
+- Run `node pg.js` => It yields the expected output mentioned above
