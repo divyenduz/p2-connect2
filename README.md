@@ -18,7 +18,7 @@ Output:
 2nd connect
 2nd sleep 20 query sent async
 1st query returned
-2nd query errored
+2nd query returned
 ```
 
 - Run `node no-manual-connect.js` with Prisma version 2.10.0-dev.31 [which is a Prisma version that connects automatically]
