@@ -10,28 +10,28 @@
 - Run `docker-compose up -d`
 - Run `node no-manual-connect.js` with Prisma version 2.10.0-dev.30 [which is a Prisma version that doesn't connect automatically]
 
-Output:
+    Output:
 
-```
-1st connect
-1st sleep 20 query sent async
-2nd connect
-2nd sleep 20 query sent async
-1st query returned
-2nd query returned
-```
+      ```
+      1st connect
+      1st sleep 20 query sent async
+      2nd connect
+      2nd sleep 20 query sent async
+      1st query returned
+      2nd query returned
+      ```
 
 - Run `node no-manual-connect.js` with Prisma version 2.10.0-dev.31 [which is a Prisma version that connects automatically]
 
-Output:
+    Output:
 
-```
-1st connect
-1st sleep 20 query sent async
-1st query returned
-2nd connect
-2nd sleep 20 query sent async
-2nd query returned
-```
+      ```
+      1st connect
+      1st sleep 20 query sent async
+      1st query returned
+      2nd connect
+      2nd sleep 20 query sent async
+      2nd query returned
+      ```
 
 The outputs are different
